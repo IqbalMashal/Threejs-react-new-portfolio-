@@ -18,7 +18,6 @@ import {
   python,
   cplusplus,
   typescript,
-  sunnifyimage,
   knifethrowimage,
   pythonanalysis,
   password_generator,
@@ -27,19 +26,12 @@ import {
   connectwise,
   virtualbox,
   kalilinux,
-  wireshark,
-  nmap,
-  metasploit,
-  johntheripper,
-  hydra,
-  aircrackng,
   photoshop,
   premiere,
   cinema4d,
   blender,
-  financialflowimage,
+  pdflex,
   enterpriseapitester,
-  github,
   anss,
   mongodb,
   certificate_aws,
@@ -49,6 +41,7 @@ import {
   certificate_projectManagment02,
   docker,
   dotNet,
+  rentalX,
 } from "../assets";
 
 export const navLinks = [
@@ -349,16 +342,16 @@ const extracurricular = [
 
 const projects = [
   {
-    name: "FinancialFlow 💸",
+    name: "PDFlex",
     description:
-      "Comprehensive personal finance management application built with Next.js and Typescript. It empowers users to take control of their financial health through intuitive tracking, insightful analytics, and personalized recommendations.",
+      "",
     tags: [
       {
-        name: "React-native",
+        name: "LangChain",
         color: "blue-text-gradient",
       },
       {
-        name: "Typescript",
+        name: "Javascript",
         color: "green-text-gradient",
       },
       {
@@ -370,34 +363,34 @@ const projects = [
         color: "blue-text-gradient",
       },
     ],
-    image: financialflowimage,
-    source_code_link: "https://github.com/sunnypatell/financialflow",
-    live_project_link: "https://financial-flow.vercel.app/",
+    image: pdflex,
+    source_code_link: "https://github.com/IqbalMashal/PDFlex---AI-pdf-Note-Taker",
+    live_project_link: "https://pdflex-ai-pdf-note-taker.vercel.app/",
   },
   {
-    name: "Sunnify (Spotify Downloader) ♫",
+    name: "RentalX",
     description:
-      "Sunnify is a Spotify downloader webapp/desktop application that allows you to download entire playlists locally onto your Mac/Linux/Windows PC. The web version of the app is hosted on AWS Lambda and Elastic Beanstalk, with FastAPI ASGI production.",
+      "",
     tags: [
       {
-        name: "python",
+        name: "Javascript",
         color: "blue-text-gradient",
       },
       {
-        name: "webscraping",
+        name: "MongoDB",
         color: "green-text-gradient",
       },
       {
-        name: "AWS Lambda/Beanstalk",
+        name: "Next.js",
         color: "pink-text-gradient",
       },
       {
-        name: "Proxy/API",
+        name: "GrapghQL API",
         color: "blue-text-gradient",
       },
     ],
-    image: sunnifyimage,
-    source_code_link: "https://github.com/sunnypatell/sunnify-spotify-downloader",
+    image: rentalX,
+    source_code_link: "https://rental-e9zp2lfn5-iqbalmashals-projects.vercel.app/",
     live_project_link: "https://sunnify-spotify-downloader.vercel.app/",
   },
   {

@@ -9,6 +9,9 @@ import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
+import pdflex from "./myprojects/pdflex.png"
+import rentalX from "./myprojects/rentalX.png"
+
 // Certificates
 import certificate_aws from "./certifications/awscloudprep01.pdf";
 import certificate_docker from "./certifications/CertificateDocker.pdf";
@@ -79,6 +82,8 @@ import next_js from "./tech/next_js.svg"
 
 
 export {
+  rentalX,
+  pdflex,
   c_logo,
   C_sharp,
   pmi,

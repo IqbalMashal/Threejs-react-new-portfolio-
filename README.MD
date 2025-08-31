@@ -2,7 +2,6 @@
 
 Welcome to the 3D Portfolio project! 🎉 This repository hosts a fully functional portfolio website designed with React.js and Three.js. It offers an immersive experience to showcase your skills and projects in a visually appealing manner.
 
-![3D Portfolio Landing Page](SPLASHSCREEN.png)
 
 ## Overview ℹ️
 
@@ -52,8 +51,4 @@ This project is open source and licensed under the Sunny Patel License. See the 
 
 ## Need Help? 🤔
 
-If you have any questions or need assistance, feel free to reach out to me at sunnypatel124555@gmail.com. I'm here to help! 🌞
-
-## GitHub Stars ⭐
-
-![GitHub Repo Stars](https://img.shields.io/github/stars/sunnypatell/react-threejs-portfolio?style=social)
+If you have any questions or need assistance, feel free to reach out to me at <iqbal.mashal077@gmail.com>. I'm here to help! 🌞
