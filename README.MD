@@ -7,10 +7,6 @@ Welcome to the 3D Portfolio project! 🎉 This repository hosts a fully function
 
 The 3D Portfolio is a modern and interactive web application built with React.js and Three.js, hosted on Vercel with Next.js. It offers a visually stunning platform to showcase your skills and projects, featuring smooth animations and responsive design.
 
-## Live Demo 💻
-
-Explore the live demonstration of the project at [www.sunnypatel.net](www.sunnypatel.net)!
-
 ## Usage 🛠️
 
 Feel free to explore the codebase and use it as a reference for building your own interactive portfolio or web application. The project demonstrates how to leverage React.js and Three.js to create visually stunning and interactive experiences on the web.
@@ -23,9 +19,6 @@ Feel free to explore the codebase and use it as a reference for building your ow
 - **Smooth Transitions**: Enhance user experience with smooth transitions and animations powered by Framer Motion.
 - **Customizable**: Tailor the portfolio to your needs with easy-to-understand code and styling.
 
-## Deployment 🌐
-
-This project is deployed on Vercel using Next.js. It dynamically hides environment variables, such as emailJS configuration, to ensure security. You can access the deployed project at [www.sunnypatel.net](www.sunnypatel.net).
 
 ## Built with Vite 🚀
 

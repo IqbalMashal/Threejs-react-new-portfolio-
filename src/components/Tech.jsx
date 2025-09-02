@@ -9,7 +9,6 @@ import {
   dotNet,
   python,
   javascript,
-  java,
   cplusplus,
   typescript,
   docker,
@@ -26,22 +25,24 @@ import {
   premiere,
   C_sharp,
   c_logo,
-  next_js
+  next_js,
+  java,
 } from "../assets";
+import { icon } from "@fortawesome/fontawesome-svg-core";
 
 const programming = [
   { name: "Python", icon: python },
-  {name: ".NET", icon: dotNet},
-  { name: "Java", icon: java },
+  { name: ".NET", icon: dotNet},
   { name: "C++", icon: cplusplus },
-  {name: "C", icon: c_logo},
-  {name: "C#", icon: C_sharp},
+  { name: "C", icon: c_logo},
+  { name: "C#", icon: C_sharp},
+  { name: "Java", icon: java },
   { name: "JavaScript", icon: javascript },
   { name: "TypeScript", icon: typescript },
   { name: "Docker", icon: docker },
   { name: "Tailwind CSS", icon: tailwind },
   { name: "React JS", icon: reactjs },
-  {name: "Next.js", icon: next_js},
+  { name: "Next.js", icon: next_js},
   { name: "PostgreSQL", icon: postgresql },
   { name: "MongoDB", icon: mongodb },
   { name: "Three.js", icon: threejs },

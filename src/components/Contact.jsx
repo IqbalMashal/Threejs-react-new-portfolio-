@@ -3,8 +3,7 @@ import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import { Toaster, toast } from 'react-hot-toast';
 import Confetti from 'react-confetti';
-// Remove ReCAPTCHA import completely for now
-// import ReCAPTCHA from "react-google-recaptcha";
+import ReCAPTCHA from "react-google-recaptcha"; // <-- NEW
 
 import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
@@ -16,10 +15,8 @@ import { faUser, faEnvelope, faComment, faPaperPlane, faSpinner, faPhone } from 
 
 const Contact = () => {
   const formRef = useRef();
-  // Remove captcha related state for now
-  // const captchaRef = useRef();
-  // const [captchaToken, setCaptchaToken] = useState(null);
-  
+  const captchaRef = useRef(); // <-- NEW
+  const [captchaToken, setCaptchaToken] = useState(null); // <-- NEW
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -76,15 +73,14 @@ const Contact = () => {
       return;
     }
 
-    // Remove captcha validation for now
-    // if (!captchaToken) {
-    //   toast("Hold up! Gotta make sure you're not a spam bot, checkmark the CAPTCHA! 🧠🤖", {
-    //     icon: '🛡️',
-    //     duration: 3500,
-    //     position: 'bottom-right',
-    //   });
-    //   return;
-    // }
+    if (!captchaToken) {
+      toast("Hold up! Gotta make sure you're not a spam bot, checkmark the CAPTCHA! 🧠🤖", {
+        icon: '🛡️',
+        duration: 3500,
+        position: 'bottom-right',
+      });
+      return;
+    }
 
     setLoading(true);
 
@@ -93,10 +89,9 @@ const Contact = () => {
         import.meta.env.VITE_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         {
-          from_name: form.name,
-          to_name: "Iqbal Mashal",
-          from_email: form.email,
-          to_email: "iqbal.mashal077@gmail.com",
+          user_name: form.name,
+          email: form.email,
+          subject: "Getting in contact from your protfolio",
           message: form.message,
         },
         import.meta.env.VITE_EMAIL_JS_ACCESS_TOKEN
@@ -111,9 +106,8 @@ const Contact = () => {
             position: 'bottom-right',
           });
           setShowConfetti(true);
-          // Remove captcha reset
-          // setCaptchaToken(null);
-          // captchaRef.current.reset();
+          setCaptchaToken(null);
+          captchaRef.current.reset(); // reset captcha after submit
           setTimeout(() => {
             setSuccess(false);
             setShowConfetti(false);
@@ -227,12 +221,18 @@ const Contact = () => {
             />
           </label>
 
-          {/* Development notice instead of CAPTCHA */}
+          {/* 🤖 CAPTCHA Field */}
           <div className="flex justify-center">
-            <div className="bg-gray-800 p-4 rounded-lg text-center border border-purple-500/30">
-              <p className="text-purple-400 text-sm">🚧 Development Mode - CAPTCHA Disabled</p>
-            </div>
+            <ReCAPTCHA
+              sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY}
+              onChange={(token) => setCaptchaToken(token)}
+              theme="dark"
+              ref={captchaRef}
+            />
           </div>
+          <span className="text-xs text-gray-400 text-center -mt-2">
+            Protected by reCAPTCHA Enterprise. ⚔️
+          </span>
 
           <button
             type="submit"

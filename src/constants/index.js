@@ -1,26 +1,25 @@
 import {
+  open_sera,
+  java,
+  pythonchatBot,
+  toyotaSQl,
+  museum,
   seneca,
   mobile,
   backend,
   web,
   fullstack,
   javascript,
-  java,
   html,
-  css,
   pmi,
   reactjs,
   tailwind,
   postgresql,
   gsha,
-  google,
   aws,
   python,
   cplusplus,
   typescript,
-  knifethrowimage,
-  pythonanalysis,
-  password_generator,
   powershell,
   cisco,
   connectwise,
@@ -31,7 +30,6 @@ import {
   cinema4d,
   blender,
   pdflex,
-  enterpriseapitester,
   anss,
   mongodb,
   certificate_aws,
@@ -124,7 +122,7 @@ const education = [
 const technologies = [
   {
     name: "Java",
-    icon: java,
+    icon: java
   },
   {
     name: "Python",
@@ -344,24 +342,12 @@ const projects = [
   {
     name: "PDFlex",
     description:
-      "",
+      "An AI-powered PDF note-taking tool that extracts key information, generates summaries, and answers questions from PDF documents to enhance study and research workflows.",
     tags: [
-      {
-        name: "LangChain",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Javascript",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Tailwind CSS",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "Next.js",
-        color: "blue-text-gradient",
-      },
+      { name: "LangChain", color: "blue-text-gradient" },
+      { name: "Javascript", color: "green-text-gradient" },
+      { name: "Tailwind CSS", color: "pink-text-gradient" },
+      { name: "Next.js", color: "blue-text-gradient" },
     ],
     image: pdflex,
     source_code_link: "https://github.com/IqbalMashal/PDFlex---AI-pdf-Note-Taker",
@@ -370,140 +356,70 @@ const projects = [
   {
     name: "RentalX",
     description:
-      "",
+      "A rental management platform that helps users browse, book, and manage rental properties with a modern interface and GraphQL-powered API integration.",
     tags: [
-      {
-        name: "Javascript",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "MongoDB",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Next.js",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "GrapghQL API",
-        color: "blue-text-gradient",
-      },
+      { name: "Javascript", color: "blue-text-gradient" },
+      { name: "MongoDB", color: "green-text-gradient" },
+      { name: "Next.js", color: "pink-text-gradient" },
+      { name: "GraphQL API", color: "blue-text-gradient" },
     ],
     image: rentalX,
     source_code_link: "https://rental-e9zp2lfn5-iqbalmashals-projects.vercel.app/",
-    live_project_link: "https://sunnify-spotify-downloader.vercel.app/",
+    live_project_link: "https://rental-x-swart.vercel.app/",
   },
   {
-    name: "Enterprise API Tester 🌐",
+    name: "Open Sera",
     description:
-      "Comprehensive API testing tool with support for all major HTTP methods, authentication, and CORS-friendly proxy. Features include request import/export, real-world samples, and local storage for data persistence. Built with Next.js, and TypeScript for optimal performance and developer experience.",
+      "An AI assistant built with OpenAI integration, designed to provide intelligent responses, automate tasks, and enhance productivity within a clean Next.js interface.",
     tags: [
-      {
-        name: "Typescript",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Tailwind CSS",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Next.js",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "Authentication-Body",
-        color: "blue-text-gradient",
-      },
+      { name: "Javascript", color: "blue-text-gradient" },
+      { name: "Tailwind CSS", color: "green-text-gradient" },
+      { name: "Next.js", color: "pink-text-gradient" },
+      { name: "Open AI", color: "blue-text-gradient" },
     ],
-    image: enterpriseapitester,
-    source_code_link: "https://github.com/sunnypatell/enterprise-api-request-tester",
-    live_project_link: "https://enterprise-api-request-tester.vercel.app/",
+    image: open_sera,
+    source_code_link: "https://github.com/IqbalMashal/Open-Sera/tree/main/open-sera",
+    live_project_link: "https://open-sera.vercel.app",
   },
   {
-    name: "KnifeThrow 🎯",
+    name: "Python Chat Bot",
     description:
-      "KnifeThrow is a Java Swing-based 2D mini-game, packed by maven with over 5000 lines of code. It includes a menu, game-over screens, sound effects, and custom sprites. Players unlock different knives with varied abilities in a dedicated knife shop. The game features improved collision systems, animations, and particle effects for an immersive experience.",
+      "A conversational AI chatbot built with Python and OpenAI, using UV package manager for streamlined dependency management and deployment.",
     tags: [
-      {
-        name: "java",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "swing",
-        color: "green-text-gradient",
-      },
-      {
-        name: "maven",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "arcadegame",
-        color: "green-text-gradient",
-      },
+      { name: "Python", color: "blue-text-gradient" },
+      { name: "UV Package Manager", color: "green-text-gradient" },
+      { name: "Open AI", color: "pink-text-gradient" },
     ],
-    image: knifethrowimage,
-    source_code_link: "https://github.com/sunnypatell/KnifeThrow",
-    live_project_link: "https://github.com/sunnypatell/KnifeThrow",
+    image: pythonchatBot,
+    source_code_link: "https://github.com/IqbalMashal/PythonAIProjects/tree/main/openAiwithPython",
+    live_project_link: "https://github.com/IqbalMashal/PythonAIProjects/tree/main/openAiwithPython",
   },
   {
-    name: "COVID-19 GTA Cases Data Analysis 🧪",
+    name: "Metropolitan Museum",
     description:
-      "A deep dive into ongoing COVID-19 outbreaks in the Greater Toronto Area (GTA), Ontario. Using data from a government-licensed dataset called Outbreaks by Public Health Unit (PHU) to explore trends and patterns in these outbreaks. This data analysis integrates the essential aspects of the data science workflow (Filesize: 3.5 MiB, 62699 lines of raw dataset)",
+      "A full-stack museum collection app that allows users to explore art pieces with authentication, secure JWT tokens, and a RESTful API backend.",
     tags: [
-      {
-        name: "python",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "tensorflow",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scikit-learn",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "pandas",
-        color: "green-text-gradient",
-      },
-      {
-        name: "matplotlib",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "numpy",
-        color: "blue-text-gradient",
-      },
+      { name: "Next.js", color: "blue-text-gradient" },
+      { name: "RESTful API", color: "green-text-gradient" },
+      { name: "JWT Token", color: "pink-text-gradient" },
+      { name: "Bootstrap", color: "green-text-gradient" },
+      { name: "Express.js", color: "pink-text-gradient" },
+      { name: "MongoDB", color: "blue-text-gradient" },
     ],
-    image: pythonanalysis,
-    source_code_link: "https://drive.google.com/drive/folders/1cTbp-6-flypV-kj3-q606UwwWEralu11",
-    live_project_link: "https://drive.google.com/drive/folders/1cTbp-6-flypV-kj3-q606UwwWEralu11",
+    image: museum,
+    source_code_link: "https://web-422-ecru.vercel.app/",
+    live_project_link: "https://web-422-ecru.vercel.app/",
   },
   {
-    name: "Secure Password Generator 🔐",
+    name: "Toyota Database",
     description:
-      "Secure Password Generator is a Java-based tool designed to generate and manage secure passwords, prioritizing simplicity, security, and user-friendliness. It employs industry-standard encryption algorithms to create strong, unique passwords resistant to common hacking attempts.",
+      "A relational SQL database project designed for Toyota sales operations, showcasing structured queries, relationships, and data management for real-world business scenarios.",
     tags: [
-      {
-        name: "java",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "sha-256",
-        color: "green-text-gradient",
-      },
-      {
-        name: "encryption/decryption",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "data-algorithms",
-        color: "blue-text-gradient",
-      },
+      { name: "SQL", color: "blue-text-gradient" },
     ],
-    image: password_generator,
-    source_code_link: "https://github.com/sunnypatell/SecurePasswordGenerator",
-    live_project_link: "https://github.com/sunnypatell/SecurePasswordGenerator",
+    image: toyotaSQl,
+    source_code_link: "https://github.com/IqbalMashal/Toyota_Database_forSales",
+    live_project_link: "https://github.com/IqbalMashal/Toyota_Database_forSales",
   },
 ];
 
